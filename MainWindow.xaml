@@ -1,0 +1,23 @@
+﻿<Window x:Class="EDMInstallerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EDMInstallerWPF"
+        mc:Ignorable="d"
+        Title="EDM Installer" Height="300" Width="250">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="135*"/>
+            <RowDefinition Height="135*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="130*"/>
+            <ColumnDefinition Width="130*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="InstallButton" Content="Install" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="20,85,0,0" Height="30" Grid.Row="1" Grid.Column="0" Click="InstallButton_Click"/>
+        <Button x:Name="FindButton" Content="Minecraft Path" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="10,85,0,0" Height="30" Grid.Column="1" Grid.Row="1" Click="FindButton_Click"/>
+        <CheckBox x:Name="EDMInstall" Content="Extra Diamonds Mod" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,50,0,0" Grid.Row="1" Width="140" Height="20" Checked="EDMInstall_Checked" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="OutputTextBlock" HorizontalAlignment="Left" Height="40" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="242" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>
